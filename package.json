@@ -1,0 +1,11 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devsass": "sass --watch global.scss style/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

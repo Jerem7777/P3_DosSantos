@@ -1,0 +1,18 @@
+@import "./header.scss";
+@import "../../nav.scss";
+@import "../../footer.scss";
+
+main
+{
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    
+    a
+    {
+        text-decoration: none;
+       h3 {
+           color: black;
+        }   
+    }
+}
