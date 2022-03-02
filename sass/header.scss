@@ -1,0 +1,57 @@
+@import "./Components/Button";
+
+p 
+{
+    font-family: Roboto;
+    
+}
+header{
+   
+ .logo
+ {
+     width: 200px;
+     margin-left: 115px;
+     padding-bottom: 10px;     
+ }
+
+    
+
+    .bloc-btn
+    {
+        height:350px;
+        width: 100%;
+        background-color: #F6F6F6;
+        font-family: Roboto; 
+        font-weight: bold;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        
+    
+
+        h2
+        {
+            margin-left: 60px;
+            font-size: 2em;
+
+        }
+        p 
+        {
+           padding-left: 80px;
+           
+            
+        }
+    }
+
+    .rect-p
+    {
+        height: 50px;
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        padding-right: 70px;
+        
+    } 
+}

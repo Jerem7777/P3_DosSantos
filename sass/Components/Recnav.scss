@@ -1,61 +1,42 @@
-h2
-{
-    
-    font-family: Roboto;
-    
-}
-
-.rect-nav
-{
-    border: 2px  grey;
+.rect-nav {
+    border: 2px grey;
     width: 80%;
     height: 70px;
     border-radius: 25px;
     background-color: #F6F6F6;
-    position: relative; 
-    margin: 20px auto; 
+    position: relative;
+    margin: 20px auto;
     display: flex;
     align-items: center;
-       
-    
-    p
-    {
+
+    p {
         display: inline;
-       
+
     }
 }
 
-.bold
-{
-    
+.bold {
+
     font-weight: bold;
 }
 
-
-
-.fa-solid
-{
+.fa-solid {
     color: gray;
     font-size: 1.5em;
     margin: auto 40px;
-    
 }
 
-
-
-.nombre-cercle
-{
+.nombre-cercle {
     height: 30px;
     width: 30px;
     background-color: #9356DC;
     border-radius: 50%;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     color: white;
     font-family: Roboto;
     position: absolute;
     top: calc(50% - 15px);
     left: -15px;
-   
 }

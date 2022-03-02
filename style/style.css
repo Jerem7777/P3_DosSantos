@@ -1,6 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+#bouton {
+  width: 60%;
+  height: 60px;
+  border: 2px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  margin-left: 20%;
+  background: linear-gradient(#E671DA, #A35BDC);
+  font-family: Roboto 100;
+}
+
 p {
   font-family: Roboto;
 }
@@ -35,34 +47,6 @@ header .rect-p {
   justify-content: center;
   font-weight: bold;
   padding-right: 70px;
-}
-header #bouton {
-  width: 60%;
-  height: 60px;
-  border: 2px;
-  border-radius: 50px;
-  color: white;
-  font-weight: bold;
-  margin-left: 20%;
-  background-color: #E671DA;
-  font-family: Roboto 100;
-}
-
-@media screen and (min-width: 992px) {
-  #bouton {
-    width: 30%;
-    height: 50px;
-    border: 2px;
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    margin-left: 20%;
-    background-color: #71e6e0;
-    font-family: Roboto 100;
-  }
-}
-h2 {
-  font-family: Roboto;
 }
 
 .rect-nav {
@@ -103,6 +87,10 @@ h2 {
   position: absolute;
   top: calc(50% - 15px);
   left: -15px;
+}
+
+h2 {
+  font-family: Roboto;
 }
 
 .bloc-footer {
