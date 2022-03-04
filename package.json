@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "devsass": "sass --watch global.scss style/style.css"
+    "devsass": "sass --watch sass/global.scss style/style.css"
   },
   "author": "",
   "license": "ISC",
