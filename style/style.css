@@ -1,6 +1,75 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#logo {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+#back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+#back-arrow .fa-solid {
+  margin: 0;
+}
+
 #bouton {
   width: 60%;
   height: 60px;
@@ -8,37 +77,31 @@
   border-radius: 50px;
   color: white;
   font-weight: bold;
-  margin-left: 20%;
+  margin: auto;
   background: linear-gradient(#E671DA, #A35BDC);
-  font-family: Roboto 100;
+  font-family: Roboto;
 }
 
 p {
   font-family: Roboto;
 }
 
-header .logo {
-  width: 200px;
-  margin-left: 115px;
-  padding-bottom: 10px;
-}
 header .bloc-btn {
-  height: 350px;
-  width: 100%;
   background-color: #F6F6F6;
   font-family: Roboto;
   font-weight: bold;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 20px 10px;
+  text-align: center;
 }
 header .bloc-btn h2 {
-  margin-left: 60px;
   font-size: 2em;
+  margin: 10px 0;
 }
 header .bloc-btn p {
-  padding-left: 80px;
+  margin: 10px 0;
 }
 header .rect-p {
   height: 50px;
@@ -46,7 +109,7 @@ header .rect-p {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  padding-right: 70px;
+  align-items: center;
 }
 
 .rect-nav {
@@ -71,7 +134,7 @@ header .rect-p {
 .fa-solid {
   color: gray;
   font-size: 1.5em;
-  margin: auto 40px;
+  margin: auto 30px;
 }
 
 .nombre-cercle {
@@ -95,9 +158,7 @@ h2 {
 
 .bloc-footer {
   background-color: rgba(0, 0, 0, 0.767);
-  height: 300px;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding: 5%;
   color: white;
   position: relative;
 }
@@ -107,38 +168,38 @@ h2 {
 }
 .bloc-footer p {
   font-family: roboto;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .logo-blanc {
   color: white;
   font-family: Shrikhand;
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .fa-utensils {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   position: absolute;
-  top: calc(35% - 15px);
-  left: -15px;
+  top: calc(35% - 13px);
+  left: -5px;
 }
 
 .fa-handshake-angle {
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: white;
   position: absolute;
-  top: calc(54% - 15px);
-  left: -15px;
+  top: calc(50% - 13px);
+  left: -5px;
 }
 
 .margin-left {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 main {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0px auto;
 }
 main a {
@@ -148,69 +209,21 @@ main a h3 {
   color: black;
 }
 
-h3 {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.cards-list {
-  height: 1550px;
-  background-color: #f2f2f2;
-}
-.cards-list a {
-  text-decoration: none;
-  color: black;
-}
-
-.card {
-  height: 300px;
-  width: 90%;
-  padding-left: 5%;
-  border-radius: 10% 5% 0% 0%;
-}
-
-.bloc-card {
-  border: 0px solid #f2f2f2;
-  background-color: white;
-  width: 88%;
-  height: 120px;
-  margin-left: 4.8%;
-  border-radius: 0% 0% 5% 5%;
-  position: absolute;
-}
-
-.fa-heart {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 2.5em;
-  position: absolute;
-  top: calc(30% - 15px);
-  left: 380px;
-}
-
-body .bouton {
-  width: 50%;
+body #bouton {
+  width: 60%;
   height: 70px;
   border: 2px;
   background-color: #FF79DA;
   border-radius: 25px 25px 25px 25px;
   color: white;
   font-weight: bold;
-  margin-left: 25%;
-  margin-top: 60px;
-}
-
-.logo {
-  width: 200px;
-  padding-left: 30px;
+  display: block;
+  margin-top: 50px;
 }
 
 .fa-arrow-left {
   font-size: 2em;
   color: black;
-  text-decoration: none;
-  padding-bottom: 20px;
 }
 
 .img-fr {
@@ -223,12 +236,58 @@ body .bouton {
   height: 1200px;
   background-color: #f2f2f2;
   position: relative;
+  margin-top: -30px;
+  border-radius: 35px 35px;
+}
+.bloc-menu h1 {
+  padding: 50px 0px 25px 25px;
+  font-size: 1.5em;
 }
 .bloc-menu .fa-heart {
   position: absolute;
-  top: calc(2% - 15px);
-  left: 400px;
+  top: calc(5% - 15px);
+  left: 300px;
   font-size: 2.2em;
+}
+.bloc-menu p {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.card-fr {
+  background-image: url("../assets/restaurants/card-3.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+}
+
+.card-note {
+  background-image: url("../assets/restaurants/card-2.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+}
+
+.card-palette {
+  background-image: url("../assets/restaurants/card-1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+}
+
+.card-delice {
+  background-image: url("../assets/restaurants/card-4.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 200px;
+}
+
+.underline-bloc {
+  width: 35px;
+  height: 5px;
+  background-color: #99E2D0;
+  margin-top: 5px;
+  margin-left: 25px;
 }
 
 h1 {
@@ -242,6 +301,10 @@ h1 {
   width: 90%;
   height: 70px;
   margin-left: 5%;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-plats {
@@ -251,6 +314,7 @@ h1 {
   width: 90%;
   height: 70px;
   margin-left: 5%;
+  margin-top: 20px;
 }
 
 .card-desserts {
@@ -260,21 +324,113 @@ h1 {
   width: 90%;
   height: 70px;
   margin-left: 5%;
-}
-
-.prix {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .margin-bottom {
   margin-bottom: 40px;
 }
 
-.souligné {
-  height: 3px;
-  width: 2px;
+.aife {
+  margin-left: 300px;
+  padding-top: -10px;
+  position: relative;
+  top: calc(10% - 23px);
+  font-family: roboto;
+}
+
+.fa-circle-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 1500px;
+  transition: 0.3s;
+  font-size: 4em;
   color: #99E2D0;
+}
+
+.card-entrées:hover .fa-circle-check {
+  right: 0;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked + label .fa-circle-check {
+  right: 0;
+}
+
+.bloc-new {
+  height: 15px;
+  width: 82px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: calc(30% - 190px);
+  left: 200px;
+  font-family: Roboto;
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.cards-list {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.cards-list .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards-list .cards .card {
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  height: 250px;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+}
+.cards-list .cards .card__1 {
+  background-image: url("../assets/restaurants/card-1.jpg");
+}
+.cards-list .cards .card__2 {
+  background-image: url("../assets/restaurants/card-2.jpg");
+}
+.cards-list .cards .card__3 {
+  background-image: url("../assets/restaurants/card-3.jpg");
+}
+.cards-list .cards .card__4 {
+  background-image: url("../assets/restaurants/card-4.jpg");
+}
+.cards-list .cards .card .bloc-card {
+  border: 0px solid #f2f2f2;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 10px;
+}
+.cards-list .cards .card .bloc-card .fa-heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.9em;
+  position: absolute;
+  top: calc(40% - 15px);
+  left: 260px;
 }
 
 /*# sourceMappingURL=style.css.map */

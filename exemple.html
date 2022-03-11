@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background: rgb(184, 184, 184)
+        }
+
+        .checkmark {
+            height: 30px;
+            width: 30px;
+            background-color: green;
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: -30px;
+            transition: 0.3s;
+        }
+
+        .label {
+            width: 600px;
+            height: 30px;
+            background-color: #fff;
+            display: block;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .label:hover .checkmark {
+            right: 0;
+        }
+
+        #canard {
+            display: none
+        }
+        #canard:checked + label .checkmark {
+            right: 0;
+        }
+    </style>
+
+    <form action="">
+        <input type="checkbox" name="plat" id="canard">
+        <label class="label" for="canard">
+            <p>Magret de canard</p>
+            <div class="checkmark">V</div>
+        </label>
+    </form>
+
+</body>
+</html>
+
+
+<div class="card-entrées">
+    <p class="bold"> Tartare de poulpe acidulé<br></p>
+    <p> Aux zests d'orange</p>
+    <div class="aife">25€</div>
+</div>

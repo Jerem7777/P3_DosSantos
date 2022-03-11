@@ -1,4 +1,10 @@
-@import "homepage";
+@import "reset";
 @import "police-couleur";
-@import "./Section-restaurants";
+
+@import "./Components/Logo";
+@import "./Components/BackArrow";
+
+@import "homepage";
 @import "Body-menu-fr";
+@import "./Section-restaurants";
+

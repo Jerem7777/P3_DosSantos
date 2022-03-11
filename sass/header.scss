@@ -5,42 +5,24 @@ p
     font-family: Roboto;
     
 }
-header{
-   
- .logo
- {
-     width: 200px;
-     margin-left: 115px;
-     padding-bottom: 10px;     
- }
+header{    
 
-    
-
-    .bloc-btn
-    {
-        height:350px;
-        width: 100%;
+    .bloc-btn {
         background-color: #F6F6F6;
         font-family: Roboto; 
         font-weight: bold;
         font-size: 1.2em;
         display: flex;
         flex-direction: column;
-        padding-top: 50px;
-        
-    
+        padding: 20px 10px;
+        text-align: center;
 
-        h2
-        {
-            margin-left: 60px;
+        h2 {
             font-size: 2em;
-
+            margin: 10px 0;
         }
-        p 
-        {
-           padding-left: 80px;
-           
-            
+        p{
+            margin: 10px 0;
         }
     }
 
@@ -51,7 +33,7 @@ header{
         display: flex;
         justify-content: center;
         font-weight: bold;
-        padding-right: 70px;
-        
+        align-items: center;  
+    
     } 
 }

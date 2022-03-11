@@ -1,3 +1,4 @@
+@import "./Components/Bloc-new";
 
 h3
 {
@@ -5,51 +6,63 @@ h3
     font-weight: bold;
     font-size: 1.5em;
 }
-.cards-list
-{
-    height: 1550px;
+
+
+
+
+.cards-list {
+    padding: 20px;
     background-color: #f2f2f2;
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .card {
+            text-decoration: none;
+            color: black;
+            border-radius: 20px;
+            overflow: hidden;
+            display: block;
+            height: 250px;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            margin: 20px;
     
+            &__1 {background-image: url('../assets/restaurants/card-1.jpg');}
+            &__2 {background-image: url('../assets/restaurants/card-2.jpg');}
+            &__3 {background-image: url('../assets/restaurants/card-3.jpg');}
+            &__4 {background-image: url('../assets/restaurants/card-4.jpg');}
+            
+            .bloc-card {
+                border: 0px solid #f2f2f2;
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 15px 10px;
+              
+                .fa-heart {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 1.9em;
+                    position: absolute;
+                    top: calc(40% - 15px);
+                    left: 260px;
     
-    a 
-    {
-        text-decoration: none;
-        color: black;
+                }
+
+               
+
+                
+            }
+        }
     }
- 
 }
 
-.card
-{
-    height: 300px;
-    width: 90%;
-    padding-left: 5%;
-    border-radius: 10% 5% 0% 0%;
-}
-
-.bloc-card
-{
-    border: 0px solid #f2f2f2;
-    background-color: white;
-    width: 88%;
-    height: 120px;
-    margin-left: 4.8%;
-    border-radius: 0% 0% 5% 5%;
-    
-    position: absolute;
- 
-
-    
-}
-
-.fa-heart
-{
-display: flex;
-justify-content: flex-end;
-font-size: 2.5em;
-position: absolute;
-top: calc(30% - 15px);
-left: 380px;
-
-}
 
