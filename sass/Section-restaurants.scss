@@ -1,5 +1,6 @@
 @import "./Components/Bloc-new";
 
+
 h3
 {
     font-family: Roboto;
@@ -13,6 +14,12 @@ h3
 .cards-list {
     padding: 20px;
     background-color: #f2f2f2;
+
+    .titre-marg
+{
+    display: block;
+    margin: auto;
+}
 
     .cards {
         display: flex;

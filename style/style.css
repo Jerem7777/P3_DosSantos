@@ -80,6 +80,13 @@ img {
   margin: auto;
   background: linear-gradient(#E671DA, #A35BDC);
   font-family: Roboto;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 2px 2px 2px #acacac;
+}
+#bouton:hover {
+  background: linear-gradient(#ffa8f6, #b789dd);
+  box-shadow: 3px 3px 4px #aaaaaa;
 }
 
 p {
@@ -169,32 +176,22 @@ h2 {
 .bloc-footer p {
   font-family: roboto;
   font-size: 1.5em;
+  margin: 20px;
 }
-
-.logo-blanc {
+.bloc-footer i.fa-solid {
+  color: white;
+  font-size: 1em;
+  margin: 0 0;
+  width: 30px;
+}
+.bloc-footer .margin-left {
+  margin-left: 15px;
+}
+.bloc-footer .logo-blanc {
   color: white;
   font-family: Shrikhand;
   font-size: 1.3em;
-}
-
-.fa-utensils {
-  font-size: 1.5em;
-  color: white;
-  position: absolute;
-  top: calc(35% - 13px);
-  left: -5px;
-}
-
-.fa-handshake-angle {
-  font-size: 1.2em;
-  color: white;
-  position: absolute;
-  top: calc(50% - 13px);
-  left: -5px;
-}
-
-.margin-left {
-  margin-left: 40px;
+  padding: 15px;
 }
 
 main {
@@ -300,7 +297,6 @@ h1 {
   border-radius: 15px 15px 15px 15px;
   width: 90%;
   height: 70px;
-  margin-left: 5%;
   margin-top: 20px;
   display: block;
   position: relative;
@@ -313,7 +309,6 @@ h1 {
   border-radius: 15px 15px 15px 15px;
   width: 90%;
   height: 70px;
-  margin-left: 5%;
   margin-top: 20px;
 }
 
@@ -323,7 +318,6 @@ h1 {
   border-radius: 15px 15px 15px 15px;
   width: 90%;
   height: 70px;
-  margin-left: 5%;
   margin-top: 20px;
 }
 
@@ -339,29 +333,42 @@ h1 {
   font-family: roboto;
 }
 
-.fa-circle-check {
+.checkmark {
+  background-color: #99E2D0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
-  right: 1500px;
+  bottom: 0;
+  right: -70px;
+  width: 70px;
   transition: 0.3s;
-  font-size: 4em;
-  color: #99E2D0;
+  font-size: 20px;
 }
 
-.card-entrées:hover .fa-circle-check {
+.fa-circle-check {
+  color: #fff;
+}
+
+.card-entrées:hover .checkmark {
   right: 0;
 }
 
-#check {
+.checkbox {
   display: none;
 }
 
-#check:checked + label .fa-circle-check {
+.checkbox:checked + label .checkmark {
   right: 0;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bloc-new {
@@ -369,9 +376,11 @@ h1 {
   width: 82px;
   background-color: #99e2d0;
   position: absolute;
-  top: calc(30% - 190px);
-  left: 200px;
+  top: 10px;
+  right: 10px;
   font-family: Roboto;
+  padding: 10px;
+  border-radius: 2px;
 }
 
 h3 {

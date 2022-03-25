@@ -1,58 +1,39 @@
 
-.bloc-footer
-{
+.bloc-footer {
     background-color: rgba(0, 0, 0, 0.767); 
     padding: 5%;
     color: white;
     position: relative;
    
- 
-    
-    a   
-    {
-    text-decoration: none;
-       color: white;
+    a {
+        text-decoration: none;
+        color: white;
     }
-    p
+    p {
+        font-family: roboto;
+        font-size: 1.5em;
+        margin: 20px;
+    }
+
+    i.fa-solid {
+        color: white;
+        font-size: 1em;
+        margin: 0 0;
+        width: 30px;
+    }
+
+    
+    .margin-left {
+        margin-left: 15px;
+    }
+    
+    .logo-blanc
     {
-    font-family: roboto;
-    font-size: 1.5em;
+        color: white;
+        font-family: Shrikhand;
+        font-size: 1.3em;
+        padding: 15px;
+        
     }
 }
-
-.logo-blanc
-{
-    color: white;
-    font-family: Shrikhand;
-    font-size: 1.3em;
-    
-}
-
-
-
-.fa-utensils
-{
-    
-    font-size: 1.5em;
-    color: white;
-   position: absolute;
-   top: calc(35% - 13px);
-   left: -5px;
-  
-}
-
-.fa-handshake-angle
-{
-    
-    font-size: 1.2em;
-    color: white;
-    position: absolute;
-    top: calc(50% - 13px);
-    left: -5px;
-}
-.margin-left
-{
-margin-left: 40px;
-}
-
 
