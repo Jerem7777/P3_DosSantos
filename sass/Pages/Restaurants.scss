@@ -1,0 +1,214 @@
+@import "../Components/BackArrow";
+
+body {
+    #logo {
+        @include logo
+    }
+
+
+    #bouton {
+        width: 60%;height: 70px;
+        border: 2px; 
+        background-color: #FF79DA;
+        border-radius: 25px 25px 25px 25px;
+        color: white;
+        font-weight: bold;
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.fa-arrow-left
+{   
+    font-size: 2em;
+    color: black;
+}
+
+
+.img-fr {
+    height: 300px;
+    width: 100%;
+}
+
+
+.bloc-menu
+{
+    width: 100%;
+    height: 1200px;
+    background-color: #f2f2f2;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 35px 35px;
+
+    h1
+    {
+        padding: 50px 0px 25px 25px;
+        font-size: 1.5em;
+    }
+    
+    
+
+    .fa-heart
+    {
+        position: absolute;
+        top: calc(5% - 15px);
+        left: 300px;
+        font-size: 2.2em;
+     
+    }
+
+    p
+    {
+        padding-left: 25px;
+        padding-top: 10px;
+        
+    }
+
+}
+
+.card-fr
+{
+    background-image: url('../assets/restaurants/card-3.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+}
+
+.card-note
+{
+    background-image: url('../assets/restaurants/card-2.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+}
+
+.card-palette
+{
+    background-image: url('../assets/restaurants/card-1.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+}
+
+.card-delice
+{
+    background-image: url('../assets/restaurants/card-4.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 200px;
+}
+
+.underline-bloc
+{
+    width: 35px;
+    height: 5px;
+    background-color: #99E2D0;
+    margin-top: 5px;
+    margin-left: 25px;
+
+    
+}
+h1
+{
+    font-family: Shrikhand;
+}
+
+.card
+{
+    border: 1px ;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 90%;
+    height: 70px;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+   
+}
+
+
+.margin-bottom 
+{
+    margin-bottom: 40px;
+}
+
+.aife {
+    margin-left: 300px;
+    padding-top: -10px;
+    position: relative;
+    top: calc(10% - 23px);
+    font-family: roboto;
+    transition: 0.3s;
+    right: 0;
+}
+
+.checkmark {
+    background-color: #99E2D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -70px;
+    width: 70px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.fa-circle-check {
+    color: #fff;
+}
+
+
+// checkmark
+// .card:hover .checkmark {
+//     right: 0;
+// }
+
+.checkbox {
+    display: none
+}
+
+.checkbox:checked + label .checkmark {
+    right: 0px;
+}
+
+.checkbox:checked + label .aife {
+    right: 70px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// animation apparition
+.bloc-menu {
+    .card {
+        opacity: 0;
+        margin-top: 30px;
+    }
+}
+
+@for $i from 1 to 15 {
+    .card_#{$i} {
+        animation: appear 0.5s linear;
+        animation-fill-mode: forwards;
+        animation-delay: #{$i * 0.1s};
+    }
+}
+
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        margin-top: 20px;
+    }
+}

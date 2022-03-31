@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64595e29a7.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <style>
-        .loader-container
+        .loader
         {
-            height: 50px;
-            width: 50px;
-            color: black;
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #99e2d0; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 1.5s linear infinite
         }
-        .loader {
-            animation-name: loading;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        
-        @keyframes loading {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+}
+
+
     </style>
 
     
-    <div class="loader-container">
-        <div class="loader">
-            <div class="white-circle"></div>
-        </div>
-    </div>
+    
+        <div class="loader"></div>
+
+
+        <div class="fa-regular fa-heart"></div>
+    
 
 </body>
 </html>

@@ -1,10 +1,9 @@
-@import "reset";
-@import "police-couleur";
-
+@import "./Other/reset";
+@import "./Other/fonts";
+@import "./Other/Titles";
 @import "./Components/Logo";
-@import "./Components/BackArrow";
 
-@import "homepage";
-@import "Body-menu-fr";
-@import "./Section-restaurants";
+@import "./layout/footer";
 
+@import "./Pages/Index";
+@import "./Pages/Restaurants";

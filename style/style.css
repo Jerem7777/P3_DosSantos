@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -55,19 +54,45 @@ img {
   max-width: 100%;
 }
 
-#logo {
-  width: 200px;
-  margin: 20px auto;
-  display: block;
+h2 {
+  font-family: Roboto;
 }
 
-#back-arrow {
-  position: absolute;
-  top: 20px;
-  left: 10px;
+h3 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.5em;
 }
-#back-arrow .fa-solid {
-  margin: 0;
+
+.bloc-footer {
+  background-color: rgba(0, 0, 0, 0.767);
+  padding: 5%;
+  color: white;
+  position: relative;
+}
+.bloc-footer a {
+  text-decoration: none;
+  color: white;
+}
+.bloc-footer p {
+  font-family: roboto;
+  font-size: 1.5em;
+  margin: 20px;
+}
+.bloc-footer i.fa-solid {
+  color: white;
+  font-size: 1em;
+  margin: 0 0;
+  width: 30px;
+}
+.bloc-footer .margin-left {
+  margin-left: 15px;
+}
+.bloc-footer .logo-blanc {
+  color: white;
+  font-family: Shrikhand;
+  font-size: 1.3em;
+  padding: 15px;
 }
 
 #bouton {
@@ -93,7 +118,20 @@ p {
   font-family: Roboto;
 }
 
-header .bloc-btn {
+header .bloc-header #logo {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+header .bloc-header .rect-p {
+  height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+}
+header .bloc-header .bloc-btn {
   background-color: #F6F6F6;
   font-family: Roboto;
   font-weight: bold;
@@ -103,20 +141,12 @@ header .bloc-btn {
   padding: 20px 10px;
   text-align: center;
 }
-header .bloc-btn h2 {
+header .bloc-header .bloc-btn h2 {
   font-size: 2em;
   margin: 10px 0;
 }
-header .bloc-btn p {
+header .bloc-header .bloc-btn p {
   margin: 10px 0;
-}
-header .rect-p {
-  height: 50px;
-  background-color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  align-items: center;
 }
 
 .rect-nav {
@@ -159,39 +189,69 @@ header .rect-p {
   left: -15px;
 }
 
-h2 {
+.bloc-new {
+  height: 15px;
+  width: 82px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-family: Roboto;
+  padding: 10px;
+  border-radius: 2px;
 }
 
-.bloc-footer {
-  background-color: rgba(0, 0, 0, 0.767);
-  padding: 5%;
-  color: white;
-  position: relative;
+.cards-list {
+  padding: 20px;
+  background-color: #f2f2f2;
 }
-.bloc-footer a {
+.cards-list .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards-list .cards .card {
   text-decoration: none;
-  color: white;
-}
-.bloc-footer p {
-  font-family: roboto;
-  font-size: 1.5em;
+  color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  height: 250px;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
   margin: 20px;
 }
-.bloc-footer i.fa-solid {
-  color: white;
-  font-size: 1em;
-  margin: 0 0;
-  width: 30px;
+.cards-list .cards .card__1 {
+  background-image: url("../assets/restaurants/card-1.jpg");
 }
-.bloc-footer .margin-left {
-  margin-left: 15px;
+.cards-list .cards .card__2 {
+  background-image: url("../assets/restaurants/card-2.jpg");
 }
-.bloc-footer .logo-blanc {
-  color: white;
-  font-family: Shrikhand;
-  font-size: 1.3em;
-  padding: 15px;
+.cards-list .cards .card__3 {
+  background-image: url("../assets/restaurants/card-3.jpg");
+}
+.cards-list .cards .card__4 {
+  background-image: url("../assets/restaurants/card-4.jpg");
+}
+.cards-list .cards .card .bloc-card {
+  border: 0px solid #f2f2f2;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 10px;
+}
+.cards-list .cards .card .bloc-card .fa-heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.9em;
+  position: absolute;
+  top: calc(40% - 15px);
+  left: 280px;
 }
 
 main {
@@ -199,13 +259,27 @@ main {
   max-width: 1000px;
   margin: 0px auto;
 }
+main .titre-marg {
+  margin: 20px;
+}
 main a {
   text-decoration: none;
 }
-main a h3 {
-  color: black;
+
+#back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+#back-arrow .fa-solid {
+  margin: 0;
 }
 
+body #logo {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
 body #bouton {
   width: 60%;
   height: 70px;
@@ -291,7 +365,7 @@ h1 {
   font-family: Shrikhand;
 }
 
-.card-entrées {
+.card {
   border: 1px;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
@@ -301,24 +375,6 @@ h1 {
   display: block;
   position: relative;
   overflow: hidden;
-}
-
-.card-plats {
-  border: 1px;
-  background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  width: 90%;
-  height: 70px;
-  margin-top: 20px;
-}
-
-.card-desserts {
-  border: 1px;
-  background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  width: 90%;
-  height: 70px;
-  margin-top: 20px;
 }
 
 .margin-bottom {
@@ -331,6 +387,8 @@ h1 {
   position: relative;
   top: calc(10% - 23px);
   font-family: roboto;
+  transition: 0.3s;
+  right: 0;
 }
 
 .checkmark {
@@ -352,16 +410,16 @@ h1 {
   color: #fff;
 }
 
-.card-entrées:hover .checkmark {
-  right: 0;
-}
-
 .checkbox {
   display: none;
 }
 
 .checkbox:checked + label .checkmark {
-  right: 0;
+  right: 0px;
+}
+
+.checkbox:checked + label .aife {
+  right: 70px;
 }
 
 .inputContainer {
@@ -371,75 +429,100 @@ h1 {
   align-items: center;
 }
 
-.bloc-new {
-  height: 15px;
-  width: 82px;
-  background-color: #99e2d0;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-family: Roboto;
-  padding: 10px;
-  border-radius: 2px;
+.bloc-menu .card {
+  opacity: 0;
+  margin-top: 30px;
 }
 
-h3 {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 1.5em;
+.card_1 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
 }
 
-.cards-list {
-  padding: 20px;
-  background-color: #f2f2f2;
+.card_2 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
 }
-.cards-list .cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+
+.card_3 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
 }
-.cards-list .cards .card {
-  text-decoration: none;
-  color: black;
-  border-radius: 20px;
-  overflow: hidden;
-  display: block;
-  height: 250px;
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  margin: 20px;
+
+.card_4 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
 }
-.cards-list .cards .card__1 {
-  background-image: url("../assets/restaurants/card-1.jpg");
+
+.card_5 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
-.cards-list .cards .card__2 {
-  background-image: url("../assets/restaurants/card-2.jpg");
+
+.card_6 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
 }
-.cards-list .cards .card__3 {
-  background-image: url("../assets/restaurants/card-3.jpg");
+
+.card_7 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
 }
-.cards-list .cards .card__4 {
-  background-image: url("../assets/restaurants/card-4.jpg");
+
+.card_8 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
 }
-.cards-list .cards .card .bloc-card {
-  border: 0px solid #f2f2f2;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 10px;
+
+.card_9 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
 }
-.cards-list .cards .card .bloc-card .fa-heart {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1.9em;
-  position: absolute;
-  top: calc(40% - 15px);
-  left: 260px;
+
+.card_10 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.card_11 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.1s;
+}
+
+.card_12 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+}
+
+.card_13 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
+}
+
+.card_14 {
+  animation: appear 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

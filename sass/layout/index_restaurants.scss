@@ -1,0 +1,19 @@
+@import "../Components/Bloc-new";
+@import "../Components/index_card";
+
+.cards-list {
+    padding: 20px;
+    background-color: #f2f2f2;
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .card {
+            @include card
+        }
+    }
+}

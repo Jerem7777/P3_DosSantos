@@ -1,0 +1,17 @@
+@import "../layout/index_header";
+@import "../layout/index_nav";
+@import "../layout/index_restaurants";
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    
+    .titre-marg {
+        margin: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
