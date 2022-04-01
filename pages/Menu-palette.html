@@ -11,93 +11,126 @@
 
 
 <body>
-<a id="back-arrow" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-<img id="logo" src="../assets/logo/ohmyfood.png">
-<div class="card-palette"></div>
+    <a id="back-arrow" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <img id="logo" src="../assets/logo/ohmyfood.png">
+    <div class="card-palette"></div>
 
-<div class="bloc-menu">
+<form class="bloc-menu">
     <h1>La palette du goût</h1><i class="fa-regular fa-heart"></i>
-    <div class="margin-bottom" >
-        <p>ENTRÉES</p><div class="underline-bloc"></div>
-        <div class="card-entrées">
-            <p class="bold"> Fricassée d'escargot<br></p>
-            <p> Au piment d'espelette</p> 
-            <div class="aife">25€</div>
-        </div>
     
-    
-        
-        <div class="card-entrées">
-            <p class="bold"> Foie gras de canard-mi-cuit<br></p>
-            <p> Et ses copeaux de truffe noire</p> 
-            <div class="aife">35€</div>
-        </div>
-    
-    
-        
-        <div class="card-entrées">
-            <p class="bold"> Oeuf au plat<br></p>
-            <p> Assaisonné à la truffe sur lit de...</p> 
-            <div class="aife">20€</div>
-        </div>
-    </div>
-
-    <div class="margin-bottom ">
-        
-        <p>PLATS</p><div class="underline-bloc"></div>
-        <div class="card-plats">
+       
+        <div class="entrées"> 
+            <p>ENTRÉES</p><div class="underline-bloc"></div>
             
-            <p class="bold"> Filet de boeuf aux herbes<br></p>
-            <p>Accompagnées de sa ribambelle de légu... </p>
-            <div class="aife">40€</div>
-        </div>
-
-        <div class="card-plats">
-            <p class="bold"> Parmentier de queue de boeuf<br></p>
-            <p> À la truffe noire sur sa purée de panais</p> 
-            <div class="aife">35€</div>
-        </div>
-
-        <div class="card-plats">
-            <p class="bold"> Filet de Turbot<br></p>
-            <p> Aux agrumes</p> 
-            <div class="aife">44€</div>
-        </div>
-    </div>
-
+            <div class="inputContainer">
+            
+                <input class="checkbox" type="checkbox" name="plat" id="check1">
+                <label class="card card_1" for="check1">
+                    <p class="bold"> Fricassée d'escargot<br></p>
+                    <p> Au piment d'espelette</p> 
+                    <div class="aife">25€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
         
-        <p>DESSERTS</p><div class="underline-bloc"></div>
-        <div class="card-desserts">
-            <p class="bold"> Paris-Brest<br></p>
-            <p> Revisité</p> 
-            <div class="aife">18€</div>
-        </div>
+    
+    
         
-        <div class="card-desserts">
-            <p class="bold"> Macaron au chocolat d'exeption<br></p>
-            <p> Et glace à la vanille de Madagascar</p> 
-            <div class="aife">22€</div>
-        </div>
+                <input class="checkbox" type="checkbox" name="plat" id="check2">
+                <label class="card card_2" for="check2">
+                    <p class="bold"> Foie gras de canard-mi-cuit<br></p>
+                    <p> Et ses copeaux de truffe noire</p> 
+                    <div class="aife">35€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
         
-        <div class="card-desserts">
-            <p class="bold"> Mousse au chocolat<br></p>
-            <p> Au piment d'espelette et à la truffe noire</p> 
-            <div class="aife">23€</div>
+    
+    
+        
+                <input class="checkbox" type="checkbox" name="plat" id="check3">
+                <label class="card card_3" for="check3">
+                    <p class="bold"> Oeuf au plat<br></p>
+                    <p> Assaisonné à la truffe sur lit de...</p> 
+                    <div class="aife">20€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+            </div>
         </div>
 
+    
+        <div class="plats">
+            <p>PLATS</p><div class="underline-bloc"></div>
+        
+            <div class="inputContainer">
+                <input class="checkbox" type="checkbox" name="plat" id="check4">
+                <label class="card card_4" for="check4">
+                    <p class="bold"> Filet de boeuf aux herbes<br></p>
+                    <p>Accompagnées de sa ribambelle de légu... </p>
+                    <div class="aife">40€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+        
+
+                <input class="checkbox" type="checkbox" name="plat" id="check5">
+                <label class="card card_5" for="check5">
+                    <p class="bold"> Parmentier de queue de boeuf<br></p>
+                    <p> À la truffe noire sur sa purée de panais</p> 
+                    <div class="aife">35€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+        
+
+                <input class="checkbox" type="checkbox" name="plat" id="check6">
+                <label class="card card_6" for="check6">
+                    <p class="bold"> Filet de Turbot<br></p>
+                    <p> Aux agrumes</p> 
+                    <div class="aife">44€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+            </div>
+        </div>
+
+        <div class="desserts">
+            <p>DESSERTS</p><div class="underline-bloc"></div>
+        
+            <div class="inputContainer">
+                
+                <input class="checkbox" type="checkbox" name="plat" id="check7">
+                <label class="card card_7" for="check7">
+                    <p class="bold"> Paris-Brest<br></p>
+                    <p> Revisité</p> 
+                    <div class="aife">18€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+        
+        
+                <input class="checkbox" type="checkbox" name="plat" id="check8">
+                <label class="card card_8" for="check8">
+                    <p class="bold"> Macaron au chocolat d'exeption<br></p>
+                    <p> Et glace à la vanille de Madagascar</p> 
+                    <div class="aife">22€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+        
+        
+                <input class="checkbox" type="checkbox" name="plat" id="check9">
+                <label class="card card_9" for="check9">
+                    <p class="bold"> Mousse au chocolat<br></p>
+                    <p> Au piment d'espelette et à la truffe noire</p> 
+                    <div class="aife">23€</div>
+                    <div class="checkmark"><i class="fa-solid fa-circle-check"></i></div>
+                </label>
+            </div>
+        </div>        
         <button id="bouton"> Commander </button>
 
-    </div>
-
-</div>
-<footer>
+ </form>
+ <footer>
     <div class="bloc-footer">
-       <span class="logo-blanc">ohmyfood      
-       </span>
-        <span i class="fa-solid fa-utensils"></i></span><p class="margin-left">Proposer un restautant<br></p>
-          <span i class="fa-solid fa-handshake-angle"></i></span><p class="margin-left"> Devenir partenaire<br></p>
-            <p>Mentions légales<br></p>
-            <p><a href="mailto:noreply@ohmyfood.com">Contact</p></a>     
+        <span class="logo-blanc">ohmyfood</span>
+        <p><i class="fa-solid fa-utensils"></i><span class="margin-left">Proposer un restautant<br></span></p>
+        <p><i class="fa-solid fa-handshake-angle"></i><span class="margin-left">Devenir partenaire<br></span></p>
+        <p>Mentions légales<br></p>
+        <p><a href="mailto:noreply@ohmyfood.com">Contact</p></a>
     </div>
 </footer>
 

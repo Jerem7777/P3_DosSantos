@@ -382,13 +382,13 @@ h1 {
 }
 
 .aife {
-  margin-left: 300px;
-  padding-top: -10px;
-  position: relative;
-  top: calc(10% - 23px);
+  display: flex;
+  justify-content: flex-end;
   font-family: roboto;
+  padding-right: 5px;
   transition: 0.3s;
   right: 0;
+  position: relative;
 }
 
 .checkmark {
