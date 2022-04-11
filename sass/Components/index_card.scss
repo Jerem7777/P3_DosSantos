@@ -24,13 +24,28 @@
         width: 100%;
         padding: 15px 10px;
         
-        .fa-heart {
-            display: flex;
-            justify-content: flex-end;
-            font-size: 1.9em;
+        .fa-heart
+        {
             position: absolute;
-            top: calc(40% - 15px);
-            left: 280px;
+            top: calc(5% - 1px);
+            left: 300px;
+            font-size: 2.2em;
+            color: grey;
+            
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding:.2em;
+        }
+            
+          
+        .fa-heart::before {
+            content: "\f004";
+            font-weight: bold;
+            transition: color 1s ease-out;
+        }
+        .fa-heart:hover::before{
+            color: red;
+            cursor: pointer;
         }
     }
 }

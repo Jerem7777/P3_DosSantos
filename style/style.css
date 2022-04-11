@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -246,14 +247,54 @@ header .bloc-header .bloc-btn p {
   padding: 15px 10px;
 }
 .cards-list .cards .card .bloc-card .fa-heart {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1.9em;
   position: absolute;
-  top: calc(40% - 15px);
-  left: 280px;
+  top: calc(5% - 1px);
+  left: 300px;
+  font-size: 2.2em;
+  color: grey;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+.cards-list .cards .card .bloc-card .fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.cards-list .cards .card .bloc-card .fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
 
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #99e2d0;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+  position: fixed;
+  cursor: wait;
+  top: 0px;
+  left: 0px;
+  /* Placement du loader */
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-duration: 2s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+    display: none;
+  }
+}
 main {
   width: 100%;
   max-width: 1000px;
@@ -309,6 +350,8 @@ body #bouton {
   position: relative;
   margin-top: -30px;
   border-radius: 35px 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .bloc-menu h1 {
   padding: 50px 0px 25px 25px;
@@ -316,13 +359,31 @@ body #bouton {
 }
 .bloc-menu .fa-heart {
   position: absolute;
-  top: calc(5% - 15px);
+  top: calc(5% - 25px);
   left: 300px;
   font-size: 2.2em;
+  color: grey;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+.bloc-menu .fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.bloc-menu .fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
 .bloc-menu p {
   padding-left: 25px;
   padding-top: 10px;
+}
+
+.entrées {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card-fr {
@@ -389,6 +450,7 @@ h1 {
   transition: 0.3s;
   right: 0;
   position: relative;
+  top: calc(-5% - 10px);
 }
 
 .checkmark {
@@ -408,17 +470,18 @@ h1 {
 
 .fa-circle-check {
   color: #fff;
+  transform: rotate(360deg);
 }
 
 .checkbox {
   display: none;
 }
 
-.checkbox:checked + label .checkmark {
+.card:hover .checkmark {
   right: 0px;
 }
 
-.checkbox:checked + label .aife {
+.card:hover .aife {
   right: 70px;
 }
 

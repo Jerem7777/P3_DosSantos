@@ -9,8 +9,17 @@
     cursor: wait;
     top: 0px;
     left: 0px;
+    /* Placement du loader */
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+   animation-duration: 2s
+    
+    
+    
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {transform: rotate(360deg); opacity: 0;display: none;
+    }
+    
 }

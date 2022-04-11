@@ -1,6 +1,7 @@
 @import "../layout/index_header";
 @import "../layout/index_nav";
 @import "../layout/index_restaurants";
+@import "../Components/loader";
 
 
 main {
@@ -15,4 +16,5 @@ main {
     a {
         text-decoration: none;
     }
-}
+   
+} 
