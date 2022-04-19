@@ -63,6 +63,14 @@ h3 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 1.5em;
+  padding-bottom: 5px;
+}
+
+h4 {
+  font-family: roboto;
+  padding: 10px;
+  padding-left: 25px;
+  font-weight: bold;
 }
 
 .bloc-footer {
@@ -169,7 +177,7 @@ header .bloc-header .bloc-btn p {
   font-weight: bold;
 }
 
-.fa-solid {
+.rect-nav > .fa-solid {
   color: gray;
   font-size: 1.5em;
   margin: auto 30px;
@@ -200,6 +208,7 @@ header .bloc-header .bloc-btn p {
   font-family: Roboto;
   padding: 10px;
   border-radius: 2px;
+  color: green;
 }
 
 .cards-list {
@@ -246,53 +255,82 @@ header .bloc-header .bloc-btn p {
   width: 100%;
   padding: 15px 10px;
 }
+.cards-list .cards .card .bloc-card p {
+  width: 50%;
+}
+.cards-list .cards .card .bloc-card .heart-box {
+  position: relative;
+  width: 95%;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 .cards-list .cards .card .bloc-card .fa-heart {
   position: absolute;
-  top: calc(5% - 1px);
-  left: 300px;
   font-size: 2.2em;
-  color: grey;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding: 0.2em;
 }
-.cards-list .cards .card .bloc-card .fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
+.cards-list .cards .card .bloc-card .fa-heart:hover {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
-.cards-list .cards .card .bloc-card .fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
+.cards-list .cards .card .bloc-card .heart-box .fa-solid {
+  position: absolute;
+  font-size: 2.2em;
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#ffa8f6, #b789dd);
+}
+.cards-list .cards .card .bloc-card .heart-box .fa-solid:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.cards-list .cards .card .bloc-card .box-title-heart {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-loader {
+  position: fixed;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: loader 1s 1.5s both;
+  cursor: wait;
+  z-index: 1;
 }
 
 .loader {
   border: 16px solid #f3f3f3;
   /* Light grey */
-  border-top: 16px solid #99e2d0;
-  /* Blue */
+  border-top: 16px solid #9956dc;
+  /* Purple */
+  border-bottom: 16px solid #99e2d0;
+  /*Blue*/
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 1.5s linear infinite;
-  position: fixed;
-  cursor: wait;
-  top: 0px;
-  left: 0px;
-  /* Placement du loader */
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation-duration: 2s;
+  animation: spin 1s linear infinite;
+  animation-duration: 1s;
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
-    opacity: 0;
     display: none;
+  }
+}
+@keyframes loader {
+  100% {
+    background: transparent;
+    transform: translateY(100%);
   }
 }
 main {
@@ -355,26 +393,41 @@ body #bouton {
 }
 .bloc-menu h1 {
   padding: 50px 0px 25px 25px;
-  font-size: 1.5em;
+  font-size: 2.5em;
+}
+.bloc-menu .heart-box {
+  position: relative;
+  width: 95%;
+  cursor: grab;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .bloc-menu .fa-heart {
   position: absolute;
-  top: calc(5% - 25px);
-  left: 300px;
   font-size: 2.2em;
-  color: grey;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-  padding: 0.2em;
 }
-.bloc-menu .fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
+.bloc-menu .fa-heart:hover {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
-.bloc-menu .fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
+.bloc-menu .heart-box .fa-solid {
+  position: absolute;
+  font-size: 2.2em;
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#ffa8f6, #b789dd);
+}
+.bloc-menu .heart-box .fa-solid:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.bloc-menu .box-title-heart {
+  display: flex;
+  align-items: center;
 }
 .bloc-menu p {
   padding-left: 25px;
@@ -431,26 +484,13 @@ h1 {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   width: 90%;
-  height: 70px;
   margin-top: 20px;
-  display: block;
   position: relative;
   overflow: hidden;
 }
 
 .margin-bottom {
   margin-bottom: 40px;
-}
-
-.aife {
-  display: flex;
-  justify-content: flex-end;
-  font-family: roboto;
-  padding-right: 5px;
-  transition: 0.3s;
-  right: 0;
-  position: relative;
-  top: calc(-5% - 10px);
 }
 
 .checkmark {
@@ -469,8 +509,24 @@ h1 {
 }
 
 .fa-circle-check {
-  color: #fff;
-  transform: rotate(360deg);
+  font-size: 2.2em;
+}
+
+.card:hover .checkmark .fa-circle-check {
+  color: #ffffff;
+  animation: spin 1s forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.card:hover .checkmark {
+  right: 0;
 }
 
 .checkbox {
@@ -481,14 +537,14 @@ h1 {
   right: 0px;
 }
 
-.card:hover .aife {
+.card:hover .price {
   right: 70px;
+  padding-right: 75px;
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -586,6 +642,26 @@ h1 {
     opacity: 1;
     margin-top: 20px;
   }
+}
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  font-family: roboto;
+  padding-bottom: 15px;
+}
+
+.detail-menu {
+  width: 600px;
+  text-align: justify;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 25px;
+}
+
+.price {
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

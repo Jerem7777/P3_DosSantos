@@ -45,28 +45,22 @@ body {
     h1
     {
         padding: 50px 0px 25px 25px;
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
     
     .heart-box
     {
-         position: relative;
-         width: 95%;
+         position: relative; top: calc( -3% - 20px);
+         left: 300px;
          cursor: grab;
-         display: flex;
-         justify-content: flex-end;
-         padding-right: 25px;
-         padding-left: 25px;
- 
-       
          
     }
 
-   .fa-heart
+    .fa-regular
     {
-        position: absolute;      
-        font-size: 2.2em;
-      
+        position: absolute;
+        left: 31px;        
+        font-size: 2em;
        
         
         
@@ -77,31 +71,30 @@ body {
         }
      
     }
-
-    .heart-box .fa-solid
+    .hearth-solid
     {   position: absolute;
-               font-size: 2.2em;
+        display: block;
+        font-size: 2.2em;
         opacity: 0;
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
         background-image: linear-gradient(#ffa8f6, #b789dd);
         
+        
+       
+       
+
         &:hover {
             opacity: 1;
-            transition: opacity .5s ease-in-out;
+            transition: all .5s ease-in-out;
             
                 
         }
        
     }
         
-    .box-title-heart
-    {
-        display: flex;
-        align-items: center;
 
-    }
        
         
     p
@@ -171,10 +164,13 @@ h1
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     width: 90%;
+    height: 70px;
     margin-top: 20px;
+    display: block;
     position: relative;
-    overflow: hidden; 
- 
+    overflow: hidden;
+    
+   
 }
 
 
@@ -183,6 +179,17 @@ h1
     margin-bottom: 40px;
 }
 
+.aife {
+    display: flex;
+    justify-content: flex-end;
+    font-family: roboto;
+    padding-right: 5px;
+    transition: 0.3s;
+    right: 0;
+    position: relative;
+    top: calc(-5% - 10px);
+    
+}
 
 
 .checkmark {
@@ -198,20 +205,13 @@ h1
     width: 70px;
     transition: 0.3s;
     font-size: 20px;
-    
-    
-}
-.fa-circle-check
-{
-    font-size: 2.2em;
+   
 }
 
 .card:hover .checkmark .fa-circle-check
 {
     color: #ffffff;
     animation: spin 1s forwards;
-    
-
 }
     
 @keyframes spin {
@@ -236,7 +236,7 @@ h1
 
 .card:hover .price {
     right: 70px;
-    padding-right: 75px;
+    
     
    
 }
@@ -244,8 +244,8 @@ h1
 .inputContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
    
 }
 
@@ -272,34 +272,6 @@ h1
     to {
         opacity: 1;
         margin-top: 20px;
-       
     }
-}
-
-.menu-block
-{
-   
-   display: flex;
-   justify-content: space-between;
-   font-size: 1em;
-   font-family: roboto;
-   padding-bottom: 15px;
-
-}
-
-.detail-menu
-{
-    width: 600px;
-    text-align: justify;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    padding-left: 25px;
-    
-
-}
-
-.price{
-    padding-right: 20px;
 }
 

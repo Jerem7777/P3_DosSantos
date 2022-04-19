@@ -1,25 +1,38 @@
+.container-loader
+{
+    position: fixed;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: loader 1s 1.5s both;
+    cursor: wait;
+    z-index: 1;}
+
 .loader {
     border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #99e2d0; /* Blue */
+    border-top: 16px solid #9956dc; /* Purple */
+    border-bottom: 16px solid #99e2d0; /*Blue*/;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 1.5s linear infinite;
-    position: fixed;
-    cursor: wait;
-    top: 0px;
-    left: 0px;
-    /* Placement du loader */
-    margin: auto;
-    top: 0; left: 0; right: 0; bottom: 0;
-   animation-duration: 2s
+    animation: spin 1s linear infinite;
+    animation-duration: 1s
     
     
     
 }
 
 @keyframes spin {
-    to {transform: rotate(360deg); opacity: 0;display: none;
+    to {transform: rotate(360deg);display: none;
     }
     
+}
+
+@keyframes loader{
+0% {}
+100%{
+    background: transparent; transform: translateY(100%);}
 }

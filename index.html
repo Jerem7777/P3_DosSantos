@@ -10,11 +10,13 @@
 </head>
 <body>
 
-    <div class="loader"></div>
-
+    <div class="container-loader">
+        <div class="loader"></div>
+    </div>
+    
     <header>
        <div class="bloc-header">
-           <img id="logo" src="./assets/logo/ohmyfood.png">
+           <img id="logo" src="./assets/logo/ohmyfood.png" alt="logo ohmyfood">
            <div class="rect-p"><i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
             </div>
             <div class="bloc-btn">
@@ -39,7 +41,7 @@
         </div>    
     
     
-    <section><!-- Liste cards restaurants-->
+    <section><!-- Liste cards restaurants-->  
         
         <div class="cards-list">
             
@@ -51,8 +53,12 @@
                     <div class="bloc-new">Nouveauté</div> 
                     <div class="bloc-card">
                         <h3> La palette du goût</h3>
-                        <p> Ménilmontant</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="box-title-heart">
+                            <p> Ménilmontant</p>
+                            <div class="heart-box">
+                                <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>  
                 </a>
     
@@ -61,8 +67,12 @@
                     <div class="bloc-new">Nouveauté</div> 
                     <div class="bloc-card">
                         <h3> La note enchantée</h3>
-                        <p>Charonne</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="box-title-heart">
+                            <p>Charonne</p>
+                            <div class="heart-box">
+                                <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
     
@@ -71,8 +81,12 @@
                     <div class="bloc-new">Nouveauté</div>
                     <div class="bloc-card"> 
                         <h3> À la française</h3>
-                        <p>Cité Rouge</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <div class="box-title-heart">
+                            <p>Cité Rouge</p>
+                            <div class="heart-box">
+                                <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
     
@@ -80,9 +94,13 @@
                     <!-- <img src="./assets/restaurants/card-4.jpg" alt="Photo plat le délice des sens"> -->
                     <div class="bloc-new">Nouveauté</div>
                     <div class="bloc-card"> 
-                        <h3> Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <h3>Le délice des sens</h3>
+                        <div class="box-title-heart">
+                            <p>Folie-Méricourt</p>
+                            <div class="heart-box">
+                                <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -92,10 +110,13 @@
     <footer>
         <div class="bloc-footer">
             <span class="logo-blanc">ohmyfood</span>
-            <p><i class="fa-solid fa-utensils"></i><span class="margin-left">Proposer un restautant<br></span></p>
-            <p><i class="fa-solid fa-handshake-angle"></i><span class="margin-left">Devenir partenaire<br></span></p>
-            <p>Mentions légales<br></p>
-            <p><a href="mailto:noreply@ohmyfood.com">Contact</p></a>
+            <p><i class="fa-solid fa-utensils"></i><span class="margin-left">Proposer un restautant</span></p>
+            <p><i class="fa-solid fa-handshake-angle"></i><span class="margin-left">Devenir partenaire</span></p>
+            <p>Mentions légales</p>
+            <p>
+                <a href="mailto:noreply@ohmyfood.com">Contact
+                </a>
+            </p>
         </div>
     </footer>
   
