@@ -140,10 +140,16 @@ header .bloc-header .rect-p {
   font-weight: bold;
   align-items: center;
 }
+header .bloc-header .rect-p .fa-location-dot {
+  padding-right: 15px;
+  color: grey;
+}
+header .bloc-header .rect-p p {
+  color: grey;
+}
 header .bloc-header .bloc-btn {
   background-color: #F6F6F6;
   font-family: Roboto;
-  font-weight: bold;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
@@ -152,7 +158,8 @@ header .bloc-header .bloc-btn {
 }
 header .bloc-header .bloc-btn h2 {
   font-size: 2em;
-  margin: 10px 0;
+  margin: 10px;
+  font-weight: bold;
 }
 header .bloc-header .bloc-btn p {
   margin: 10px 0;
@@ -258,6 +265,9 @@ header .bloc-header .bloc-btn p {
 .cards-list .cards .card .bloc-card p {
   width: 50%;
 }
+.cards-list .cards .card .bloc-card h3 {
+  font-size: 1.2em;
+}
 .cards-list .cards .card .bloc-card .heart-box {
   position: relative;
   width: 95%;
@@ -344,6 +354,10 @@ main .titre-marg {
 main a {
   text-decoration: none;
 }
+main h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 
 #back-arrow {
   position: absolute;
@@ -369,6 +383,7 @@ body #bouton {
   font-weight: bold;
   display: block;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .fa-arrow-left {

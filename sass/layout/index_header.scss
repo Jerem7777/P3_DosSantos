@@ -17,12 +17,21 @@ header{
             justify-content: center;
             font-weight: bold;
             align-items: center;  
+            
+            .fa-location-dot
+            {
+                padding-right: 15px;
+                color: grey;
+            }
+            p 
+            {
+                color: grey;
+            }
         } 
 
         .bloc-btn {
             background-color: #F6F6F6;
             font-family: Roboto; 
-            font-weight: bold;
             font-size: 1.2em;
             display: flex;
             flex-direction: column;
@@ -31,7 +40,9 @@ header{
     
             h2 {
                 font-size: 2em;
-                margin: 10px 0;
+                margin: 10px;
+                font-weight: bold; 
+        
             }
             p{
                 margin: 10px 0;
