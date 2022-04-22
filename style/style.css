@@ -370,6 +370,10 @@ main h2 {
   margin: 0;
 }
 
+html {
+  background-color: #f2f2f2;
+}
+
 body #logo {
   width: 200px;
   margin: 20px auto;
@@ -400,7 +404,7 @@ body #bouton {
 
 .bloc-menu {
   width: 100%;
-  height: 1200px;
+  padding-bottom: 25px;
   background-color: #f2f2f2;
   position: relative;
   margin-top: -30px;
@@ -427,7 +431,7 @@ body #bouton {
 }
 .bloc-menu .fa-heart:hover {
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .bloc-menu .heart-box .fa-solid {
   position: absolute;
@@ -545,10 +549,6 @@ h1 {
 }
 .card:hover .checkmark {
   right: 0;
-}
-
-.checkbox {
-  display: none;
 }
 
 .card:hover .checkmark {
