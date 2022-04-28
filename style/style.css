@@ -85,7 +85,7 @@ h4 {
 }
 .bloc-footer p {
   font-family: roboto;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 20px;
 }
 .bloc-footer i.fa-solid {
@@ -93,9 +93,6 @@ h4 {
   font-size: 1em;
   margin: 0 0;
   width: 30px;
-}
-.bloc-footer .margin-left {
-  margin-left: 15px;
 }
 .bloc-footer .logo-blanc {
   color: white;
@@ -105,12 +102,12 @@ h4 {
 }
 
 #bouton {
-  width: 60%;
-  height: 60px;
+  font-size: 16px;
+  padding: 15px;
+  width: 70%;
   border: 2px;
   border-radius: 50px;
   color: white;
-  font-weight: bold;
   margin: auto;
   background: linear-gradient(#E671DA, #A35BDC);
   font-family: Roboto;
@@ -157,7 +154,7 @@ header .bloc-header .bloc-btn {
   text-align: center;
 }
 header .bloc-header .bloc-btn h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 10px;
   font-weight: bold;
 }
@@ -203,6 +200,18 @@ header .bloc-header .bloc-btn p {
   position: absolute;
   top: calc(50% - 15px);
   left: -15px;
+}
+
+.fa-mobile-screen-button:hover {
+  color: #9356DC;
+}
+
+.fa-list:hover {
+  color: #9356DC;
+}
+
+.fa-store:hover {
+  color: #9356DC;
 }
 
 .bloc-new {
@@ -280,7 +289,7 @@ header .bloc-header .bloc-btn p {
 }
 .cards-list .cards .card .bloc-card .fa-heart {
   position: absolute;
-  font-size: 2.2em;
+  font-size: 1.5em;
 }
 .cards-list .cards .card .bloc-card .fa-heart:hover {
   opacity: 0;
@@ -288,7 +297,7 @@ header .bloc-header .bloc-btn p {
 }
 .cards-list .cards .card .bloc-card .heart-box .fa-solid {
   position: absolute;
-  font-size: 2.2em;
+  font-size: 1.5em;
   opacity: 0;
   color: transparent;
   background-clip: text;
@@ -383,7 +392,7 @@ body #bouton {
   height: 70px;
   border: 2px;
   background-color: #FF79DA;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 50px;
   color: white;
   font-weight: bold;
   display: block;
@@ -426,7 +435,7 @@ body #bouton {
 }
 .bloc-menu .fa-heart {
   position: absolute;
-  font-size: 2.2em;
+  font-size: 1.5em;
 }
 .bloc-menu .fa-heart:hover {
   opacity: 0;
@@ -434,7 +443,7 @@ body #bouton {
 }
 .bloc-menu .heart-box .fa-solid {
   position: absolute;
-  font-size: 2.2em;
+  font-size: 1.5em;
   opacity: 0;
   color: transparent;
   background-clip: text;
