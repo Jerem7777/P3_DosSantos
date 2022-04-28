@@ -330,7 +330,6 @@ header .bloc-header .bloc-btn p {
   width: 120px;
   height: 120px;
   animation: spin 1s linear infinite;
-  animation-duration: 1s;
 }
 
 @keyframes spin {
@@ -549,10 +548,6 @@ h1 {
 }
 .card:hover .checkmark {
   right: 0;
-}
-
-.card:hover .checkmark {
-  right: 0px;
 }
 
 .card:hover .price {
